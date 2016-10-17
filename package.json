@@ -1,0 +1,31 @@
+{
+  "name": "pull-flatmap",
+  "version": "0.0.0",
+  "description": "Flat map for pull streams",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichoth/pull-flatmap.git"
+  },
+  "keywords": [
+    "pull",
+    "stream",
+    "pull-stream",
+    "flatmap",
+    "flat",
+    "flatten"
+  ],
+  "author": "nichoth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nichoth/pull-flatmap/issues"
+  },
+  "homepage": "https://github.com/nichoth/pull-flatmap#readme",
+  "dependencies": {
+    "pull-many": "^1.0.8",
+    "pull-stream": "^3.4.5"
+  }
+}
