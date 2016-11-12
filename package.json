@@ -1,5 +1,5 @@
 {
-  "name": "pull-flatmap",
+  "name": "pull-flat-merge",
   "version": "0.0.0",
   "description": "Flat map for pull streams",
   "main": "index.js",
@@ -8,22 +8,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nichoth/pull-flatmap.git"
+    "url": "git+https://github.com/nichoth/pull-flat-merge.git"
   },
   "keywords": [
+    "merge",
     "pull",
     "stream",
     "pull-stream",
-    "flatmap",
+    "flat-merge",
     "flat",
     "flatten"
   ],
   "author": "nichoth",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nichoth/pull-flatmap/issues"
+    "url": "https://github.com/nichoth/pull-flat-merge/issues"
   },
-  "homepage": "https://github.com/nichoth/pull-flatmap#readme",
+  "homepage": "https://github.com/nichoth/pull-flat-merge#readme",
   "dependencies": {
     "pull-many": "^1.0.8",
     "pull-stream": "^3.4.5"

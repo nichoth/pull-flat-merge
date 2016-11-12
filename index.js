@@ -8,7 +8,7 @@ module.exports = function flatMerge () {
         S(source, S.drain(function onEvent (s) {
             m.add(s)
         }, function onEnd (err) {
-            // m.cap()
+            m.cap()
         }))
         return m
     }
