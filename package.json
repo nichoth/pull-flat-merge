@@ -4,7 +4,14 @@
   "description": "Flat map for pull streams",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/index.js"
+  },
+  "dependencies": {
+    "pull-many": "^1.0.8",
+    "pull-stream": "^3.4.5"
+  },
+  "devDependencies": {
+    "tape": "^4.6.2"
   },
   "repository": {
     "type": "git",
@@ -17,7 +24,8 @@
     "pull-stream",
     "flat-merge",
     "flat",
-    "flatten"
+    "flatten",
+    "map"
   ],
   "author": "nichoth",
   "license": "ISC",
@@ -25,8 +33,7 @@
     "url": "https://github.com/nichoth/pull-flat-merge/issues"
   },
   "homepage": "https://github.com/nichoth/pull-flat-merge#readme",
-  "dependencies": {
-    "pull-many": "^1.0.8",
-    "pull-stream": "^3.4.5"
+  "directories": {
+    "test": "test"
   }
 }
