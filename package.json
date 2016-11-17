@@ -4,6 +4,7 @@
   "description": "Flat map for pull streams",
   "main": "index.js",
   "scripts": {
+    "postversion": "git push && git push --tags && npm publish",
     "test": "node test/index.js"
   },
   "dependencies": {
