@@ -13,6 +13,7 @@
     "pull-stream": "^3.4.5"
   },
   "devDependencies": {
+    "tap-spec": "^4.1.1",
     "tape": "^4.6.2"
   },
   "repository": {
