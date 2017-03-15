@@ -12,7 +12,9 @@ test('flat merge', function (t) {
     t.plan(2)
     var ss = S.values([
         S.values([1,2,3]),
-        S.values(['a', 'b', 'c'])
+        S.values(['a', 'b', 'c']),
+        // non-streams are simply passed through
+        'string'
     ])
 
     S(
@@ -20,7 +22,7 @@ test('flat merge', function (t) {
         flatMerge(),
         S.collect(function (err, evs) {
             t.error(err)
-            t.deepEqual(evs, [1,'a',2,'b',3,'c'], 'should emit the events')
+            t.deepEqual(evs, [1,'a','string',2,'b',3,'c'], 'should emit the events')
         })
     )
 })
