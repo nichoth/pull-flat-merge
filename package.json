@@ -1,6 +1,6 @@
 {
   "name": "pull-flat-merge",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Flat map for pull streams",
   "main": "index.js",
   "scripts": {
