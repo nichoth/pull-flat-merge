@@ -1,6 +1,6 @@
 # pull flat merge
 
-A transform that takes a stream of streams and emits their values, in the order they arrive.
+A transform that takes a stream of streams and emits their values, in the order they arrive. This is in contrast to `.flatten`, which keeps the original order. 
 
 ## example
 ```js
