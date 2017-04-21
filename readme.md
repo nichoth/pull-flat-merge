@@ -32,7 +32,7 @@ test('flat merge', function (t) {
 chain:
 
 ```js
-// this is equilavent to `map` followed by `join` 
+// this is equivalent to `map` followed by `join` 
 var S = require('pull-stream')
 var chain = require('pull-flat-merge/chain')
 
