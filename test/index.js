@@ -8,6 +8,7 @@ test('chain', function (t) {
 
     S(
         S.values([1,2,3]),
+        // return a stream that gets merged back in
         chain(function (n) {
             if (n === 1) {
                 return S(
@@ -28,23 +29,6 @@ test('chain', function (t) {
         })
     )
 
-})
-
-test('pass through non streams', function (t) {
-    t.plan(2)
-    var source = S.values([
-        S.values([1,2]),
-        3
-    ])
-
-    S(
-        source,
-        flatMerge(),
-        S.collect(function (err, evs) {
-            t.error(err)
-            t.deepEqual(evs, [1,3,2], 'should pass through non streams')
-        })
-    )
 })
 
 test('flat merge', function (t) {
