@@ -20,7 +20,7 @@ test('flat merge', function (t) {
 
     S(
         ss,
-        flatMerge(),
+        join(),
         S.collect(function (err, evs) {
             t.error(err)
             t.deepEqual(evs, [1,'a',2,'b',3,'c'], 'should emit the events')
